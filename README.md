@@ -1,0 +1,2 @@
+# GJBlog.github.io
+MyBlog
