@@ -1,2 +1,0 @@
-# Quaffquaff.github.io
-MyBlog
