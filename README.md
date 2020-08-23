@@ -1,2 +1,2 @@
-# GJBlog.github.io
+# Quaff.github.io
 MyBlog
