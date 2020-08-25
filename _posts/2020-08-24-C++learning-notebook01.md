@@ -1,20 +1,21 @@
 ---
 layout: post
-title: C++ Things
+title: C++ Const
 date: 2020-07-11
-tags: C++   
+tags: C++  Things
 ---
 
 This artical is about how I learning the C++. It contains the steps I go through and the problems I met. Also there will be some test cases attached onto the page.
 
 ## Const
 
-> "Use onst whenever possible"
+> "Use const whenever possible"
 
 ### 1. impact of const 
 * Define constant 
 * type check 
-* can not be modified 
+* can not be modified   
+
 ### 2. pointer & const 
 ```C++
 const char* p;              //data is const, data can not be changed
@@ -29,50 +30,98 @@ const stays at the right side of *，modify pointer，means pointer is constant.
 ```C++
 void func(const int var); // input varible can not be changed 
 void func(int *const var); // pointer can not be changed
+void StringCopy(char *dst, const char *src); // input a pointer which point to a const varible
+void func(const A &a) // varible is reference, in order to protect and Increase efficiency
 ```
 
-
-## 博客主要模块介绍
-
-### _config.yml 
-
-`_config.yml` 是博客的配置文件，整个站点的信息都在这修改，想要把我的模板改成你自己的也需要修改`_config.yml` 
-
-**重要字段说明** 
-
-* enableToc: 是否开启文章自动生成目录，设置为false文章不会自动生成目录
-* comment/livere: livere评论系统，支持微信、qq、微博、豆瓣、twitter等登录后可以直接评论
-* comment/disqus: disqus评论系统，支持facebook、twitter等登录后可以直接评论
-* social/weibo、github、zhihu、jianshu等: 个人站底部展示的微博等三方社交按钮，点击后直接跳转到个人微博或其他社交主页
-* baidu/id: 百度统计，用来统计你个人站点的用户访问情况
-* ga/id: google统计，用来统计你个人站点的用户访问情况
-
-_config.yml 文件除以上字段还有一些可以自行修改，例如title之类的字段
-
-### _posts
-
-`_posts` 目录是用来存放文章的目录，写新文章，直接放在这个目录即可
-
-使用博客模板时，请把博客自带的文章给去掉，如果想使用博客自带的文章请 `注明出处`。
+#### 4. const obj default is intern  
+Ordinary variables are set to extern by default, but const It must be explicitly specified as extern in the file.  
+>Ordinary variables can use from differenet files  
 
 
-### 自定义页面
+ ```C++
+ // file1.cpp
+int ext
+// file2.cpp
+#include<iostream>
+extern int ext;
+int main(){
+    std::cout<<(ext+10)<<std::endl;
+}
+```
 
-about.md、support.md 等为自定义页面，如果你想添加自动以页面可以直接复制about.md 文件修改文件名和里面的内容即可。
+> const varible must clearify  
+```C++
+//extern_file1.cpp
+extern const int ext=12;
+//extern_file2.cpp
+#include<iostream>
+extern const int ext;
+int main(){
+    std::cout<<ext<<std::endl;
+}
+```
 
-如果需要在导航显示你新增的页面，直接在`_config.yml` 文件的nav字段中添加你新页面配置即可
+### 5. use const in class  
+If one function will not modify any data, then it should be set as const.
+  
+const object can only run const function;
+non-const object can run all.
+```C++
+//apple.cpp
+class Apple
+{
+private:
+    int people[100];
+public:
+    Apple(int i); 
+    const int apple_number;
+    void take(int num) const;
+    int add(int num);
+    int add(int num) const;
+    int getCount() const;
 
-### 修改说明
+};
+//main.cpp
+#include<iostream>
+#include"apple.cpp"
+using namespace std;
 
-如果要修改博客模板信息建议只修改`_config.yml` 文件内容和 `_posts` 里面的文章信息。因为博客模板一直在更新迭代，改动多了以免你后期更新博客模板的时候不方便。
+Apple::Apple(int i):apple_number(i)
+{
 
-如果你想改动模板的样式又想继续更新迭代博客模板，你可以提交在github上提交`pull request` 或者直接给我发邮件建议改成什么样，如果你的提议确实可以，我会采纳的，并且非常感谢你的建议。
+}
+int Apple::add(int num){
+    cout<<" add func "<<num<<endl;
+    take(num);
+}
+int Apple::add(int num) const{
+    cout<<"const add func "<<num<<endl;
+    take(num);
+}
+void Apple::take(int num) const
+{
+    cout<<"take func "<<num<<endl;
+}
+int Apple::getCount() const
+{
+    take(1);
+    add(1); //error
+    return apple_number;
+}
 
-博客迭代信息请看[ReleaseNode](https://leopardpan.cn/2020/07/ReleaseNode/)
-
-遇到解决不了的问题可以找 [技术支持](https://leopardpan.cn/support/)
-
-
-
-
-
+int main(){
+    Apple a(2);
+    cout<<a.getCount()<<endl;
+    a.add(10);
+    const Apple b(3);
+    b.add(100);
+    return 0;
+}
+//compile： g++ -o main main.cpp apple.cpp
+//result
+take func 1
+2
+take func 10
+take func 100
+```
