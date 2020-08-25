@@ -1,27 +1,35 @@
 ---
 layout: post
-title: 博客模板功能介绍
+title: C++ Things
 date: 2020-07-11
-tags: jekyll   
+tags: C++   
 ---
 
+This artical is about how I learning the C++. It contains the steps I go through and the problems I met. Also there will be some test cases attached onto the page.
 
-在此之前我有写过一篇[如何使用我博客模板的文章](http://leopardpan.cn/2016/10/jekyll_tutorials1/) 请先看这篇基础集成，这篇文章主要讲的是如何使用和修改我的博客主题，文章内容含以下几点：
+## Const
 
-## 博客特性
+> "Use onst whenever possible"
 
-- [x] 适配电脑、手机、平板等各屏幕
-- [x] 响应式设计
-- [x] 个性化头像
-- [x] 每篇文章自动添加打赏功能
-- [x] 支持Disqus、livere评论系统
-- [x] 支持站点总数访问统计，每篇文章访问统计
-- [x] 支持文章自动生成目录
-- [x] 支持标签分类
-- [x] 支持代码高亮
-- [x] 支持文章H1、H2、H3、H4标题样式多样化
-- [x] 支持多种三方社交icon展示，能从博客直接跳转到自己的三方社交主页
-- [x] 支持三方社交分享(facebook、twitter)
+### 1. impact of const 
+* Define constant 
+* type check 
+* can not be modified 
+### 2. pointer & const 
+```C++
+const char* p;              //data is const, data can not be changed
+char* const p;              //pointer is const, 
+const char* const p;        //both data and pointer are const
+```
+const stays at the left of *, modify data，means pointer point to constant;  
+const stays at the right side of *，modify pointer，means pointer is constant.  
+  
+### 3. const in functions  
+ 
+```C++
+void func(const int var); // input varible can not be changed 
+void func(int *const var); // pointer can not be changed
+```
 
 
 ## 博客主要模块介绍
