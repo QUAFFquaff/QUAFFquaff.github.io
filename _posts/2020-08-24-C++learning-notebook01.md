@@ -2,7 +2,7 @@
 layout: post
 title: C++ Const
 date: 2020-07-11
-tags: C++_Things
+tags: C++ Things
 ---
 
 This artical is about how I learning the C++. It contains the steps I go through and the problems I met. Also there will be some test cases attached onto the page.
