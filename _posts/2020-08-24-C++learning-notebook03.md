@@ -20,3 +20,23 @@ Yes, But when the virtual function is polymorphic, it cannot be inlined.
 
 ### Conclusion  
 Inline is kind of useless, sometimes even we write *inline* there, the compiler think we are fool and it will not inline.
+
+### **special problem**
+```C++
+#define MAX(a, b) ((a)>(b))?(a):(b)
+
+
+int main()
+{
+    int i = 10;
+    int j =8;
+    MAX(++i,j);
+    cout<<i;      // 11
+
+//    int i = 10;
+//    int j = 8;
+//    MAX(++i,j);
+}
+```
+the output is 12
+((++i)>j) ? (++i) : (j);
