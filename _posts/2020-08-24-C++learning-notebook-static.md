@@ -86,4 +86,25 @@ normally program first involes Destructor then end itself. But static is differe
 
 ### static function
 
-We can use a static function without instantiation.
+We can use a static function without instantiation.  
+```C++
+#include<iostream> 
+using namespace std; 
+
+class Apple 
+{ 
+    public: 
+        // static member function 
+        static void printMsg() 
+        {
+            cout<<"Welcome to Apple!"; 
+        }
+}; 
+
+// main function 
+int main() 
+{ 
+    // invoking a static member function 
+    Apple::printMsg(); 
+} 
+```
