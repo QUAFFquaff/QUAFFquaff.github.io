@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++ Const
-date: 2020-07-11
+date: 2020-08-24
 tags: C++_Things
 ---
 
