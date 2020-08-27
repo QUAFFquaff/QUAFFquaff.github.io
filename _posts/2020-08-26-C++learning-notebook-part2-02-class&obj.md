@@ -9,7 +9,7 @@ This artical is about how I learning the C++. It contains the steps I go through
 
 # constructor  
 
-Two ways to define the constructor:  
+Two ways to define the constructor:     
 ```C++
 Clock::Clock(int Hour, int Minute)
 {
