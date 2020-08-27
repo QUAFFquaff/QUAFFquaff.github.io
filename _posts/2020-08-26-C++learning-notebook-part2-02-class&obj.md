@@ -23,7 +23,8 @@ Clock::Clock(int h, int m):m_Hour(h), m_Minute(m)
 }
 ```  
 ### Copy constructor  
->"When using an existing object to initialize another new object of the same kind, call the copy constructor."  
+>"When using an existing object to initialize another new object of the same kind, call the copy constructor."    
+
 ```C++
 class   foo{
 public:
