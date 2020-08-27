@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Class&Object
+title: 02 Class & Object
 date: 2020-08-26
 tags: C++_Things
 ---
