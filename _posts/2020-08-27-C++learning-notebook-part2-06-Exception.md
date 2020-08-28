@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 05 Exception
+title: 06 Exception
 date: 2020-08-27
 tags: C++_Things
 ---
