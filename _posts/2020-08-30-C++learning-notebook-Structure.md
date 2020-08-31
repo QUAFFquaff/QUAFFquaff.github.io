@@ -1,6 +1,6 @@
 ---
 layout: post
-title: STL C++ structure
+title: C++ structure STL 
 date: 2020-08-30
 tags: C++_Things
 ---
@@ -99,7 +99,7 @@ cout<<(*it).first<<":"<<(*it).second<<endl;
 ```
 ### find
 usually we can use key to get value, but some times we can also use m.find()  
-* use find() function find key location.
+* use find() function find key location.  
 ```C++
     map<string,double>::iterator it;
     it=m.find("Jack");
@@ -109,8 +109,8 @@ usually we can use key to get value, but some times we can also use m.find()
     
     cout<<"Jack"<<":"<<m["Jack"]<<endl;
     
-```
-* use count() function judge whether a key is appear or not. 
+```  
+* use count() function judge whether a key is appear or not.   
 ```C++
     if(m.count("Jack"))
         cout<<"FOUND"<<endl;
