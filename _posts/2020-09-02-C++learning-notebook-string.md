@@ -32,3 +32,20 @@ vector<string> split2(const string &str, const string &pattern)
     return res;
 }
 ```
+
+or, we can use stringsteam to skip some charactors:  
+```C++
+vector<string> split3(const string &str, const char pattern)
+{
+    vector<string> res;
+    stringstream input(str);   //读取str到字符串流中
+    string temp;
+    //使用getline函数从字符串流中读取,遇到分隔符时停止,和从cin中读取类似
+    //注意,getline默认是可以读取空格的
+    while(getline(input, temp, pattern))
+    {
+        res.push_back(temp);
+    }
+    return res;
+}  
+```  
