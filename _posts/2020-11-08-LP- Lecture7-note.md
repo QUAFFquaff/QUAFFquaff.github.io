@@ -1,0 +1,9 @@
+---
+layout: post
+title: L7: Sensitivity
+date: 2020-11-06
+tags: Linear Optimization
+---
+
+# 6 Matrix Notation  
+
