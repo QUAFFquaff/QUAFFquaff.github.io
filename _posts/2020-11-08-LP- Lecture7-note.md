@@ -5,5 +5,5 @@ date: 2020-11-06
 tags: Linear_Optimization
 ---
 
-# 6 Matrix Notation  
+# 7 Matrix Notation  
 

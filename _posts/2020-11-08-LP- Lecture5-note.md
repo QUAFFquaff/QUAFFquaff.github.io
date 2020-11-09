@@ -2,7 +2,7 @@
 layout: post
 title: L5: Duality 
 date: 2020-11-06
-tags: Linear Optimization
+tags: Linear_Optimization
 ---
 
 # 5 Duality  
