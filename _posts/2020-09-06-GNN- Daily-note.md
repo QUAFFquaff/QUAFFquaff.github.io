@@ -1,9 +1,9 @@
----
-layout: post
-title: ML: Math Basics
-date: 2020-09-06
-tags: GNN
----
+---  
+layout: post  
+title: ML: Math Basics  
+date: 2020-09-06  
+tags: GNN  
+---  
 
 
 ### test_edges & test_edges_false

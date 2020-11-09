@@ -1,9 +1,10 @@
 ---
 layout: post
-title: L6: Matrix Notation
+title: L6  Matrix Notation
 date: 2020-11-06
 tags: Linear_Optimization
 ---
+
 
 # 6 Matrix Notation  
 

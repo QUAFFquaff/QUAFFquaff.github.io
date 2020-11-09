@@ -1,9 +1,10 @@
 ---
 layout: post
-title: L5: Duality 
+title: L5  Duality 
 date: 2020-11-06
 tags: Linear_Optimization
 ---
+
 
 # 5 Duality  
 ## Resource Allocation  
