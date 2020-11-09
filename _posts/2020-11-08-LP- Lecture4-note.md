@@ -3,7 +3,8 @@ layout: post
 title: L4 Efficiency
 date: 2020-11-06
 tags: Linear_Optimization
----
+---   
+
 # L4 Efficiency
 
 ## Definitions  
