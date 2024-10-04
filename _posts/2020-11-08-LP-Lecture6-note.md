@@ -18,14 +18,13 @@ Express \( x_B \) in terms of \( x_N \):
 
 1. 
 \[
-x_B = B^{-1}b - B^{-1}Nx_N
+x_B = B^{-1}b - B^{-1}N x_N
 \]
 
 2. 
 \[
 \eta = c_B^T x_B + c_N^T x_N = c_B^T B^{-1} b - \text{(expression to be completed)}
 \]
-
 
 DIctionary in matrix notation  
 
