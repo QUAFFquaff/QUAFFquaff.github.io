@@ -37,7 +37,7 @@ DIctionary in matrix notation
 2. NUmerical implementions of simplex method avoid explicitly calculationg $B^{-1}N$  
 
 Although B&N are typically sparse, $B{-1}$ is not.  
-Better solve $BX_B = b - NX_N$ efficiently and directly   
+Better solve $$BX_B = b - NX_N$$ efficiently and directly   
 
 ## Neg. Trans. Property  
 
