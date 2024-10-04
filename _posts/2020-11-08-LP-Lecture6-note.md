@@ -14,9 +14,15 @@ Ax = b - > Bxb + Nxn = b
 matrix B : m*m is invertible   
 since basic variables in a dictionary can be written as independent linearr combo's of non-basic variables assuming linearly dependent constrains are combined.  
 
-Express Xb in terms of x_N  
-(1) - > $x_B = B^{-1}b - B^{-1}Nx_N$  
-(2) -> $\eta = c_B^Tx_B+c_N^Tx_N = c_B^Tb^{-1}b -  []$  
+Express \( x_B \) in terms of \( x_N \):  
+(1) -> 
+\[
+x_B = B^{-1}b - B^{-1}N x_N
+\]  
+(2) -> 
+\[
+\eta = c_B^T x_B + c_N^T x_N = c_B^T B^{-1}b - [\text{expression is incomplete here}]
+\]
 
 DIctionary in matrix notation  
 
