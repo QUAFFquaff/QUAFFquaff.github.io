@@ -78,27 +78,27 @@ Earnings-free assets with no residual value are problematic.
 - 可能有人会想，比特币作为通货膨胀的对冲工具，本章讲讲述为什么不能对冲通货膨胀  
 
 Gettoni/Gottone  
-zheshi 
+ 
 
 # Some additional fallacies  
 
-### fallacy of libertarianism  
+## fallacy of libertarianism  
 
 Laws, Regularions and Rules  
 
-### Fallacy of safe haven I,(tail risk)  
+##  Fallacy of safe haven I,(tail risk)  
 2020 年 3 月
 疫情引发恐慌，btc跌幅超过股市（存疑  
 互联网区域性终端  
 
-### Fallacy of safe haven II, ( protection from tyrannical regimes)  
+## Fallacy of safe haven II, ( protection from tyrannical regimes)  
 
 比特币对所有人都是公开可见的, 公共区块链不仅能被 FBI 读取，甚至普通人在家中也能看到   
 
 
 例如，2021 年 5 月 8 日，一位 Wolfram Research 的专家能够利用统计数据检测并定位 Colonial Pipeline 支付的「匿名」赎金（参考文献 21）——而 FBI 也没花多长时间就追回了这笔资金。
 
-### Fallacy of agency problem  
+## Fallacy of agency problem  
 
 有人认为btc会是民主的，政府和银行家的财富聚集问题将减少（因为去中心化），  
 相反的，内部人士拥有更多的货币，财富转移到了新的垄断财团手中
